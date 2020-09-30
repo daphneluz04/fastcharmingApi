@@ -1,13 +1,16 @@
 const mongoose = require("./connect");
 //userchema nombre aleatorio
-var MENUSCHEMA ={
+var mon = require('mongoose');
+var Schema = mon.Schema;
+var MENUSCHEMA = new Schema({
+    idrestaurante: String,
     nombre:                String,
-    precio:                String,
+    precio:                Number,
     descripcion:           String,
-    fechaderegistro:       String,
+    fechaderegistro:       Date,
     fotografiadelproducto: String
 
-}
+});
 //aqui se define el esquema
 const MENU = mongoose.model("menu", MENUSCHEMA);
 module.exports = MENU;

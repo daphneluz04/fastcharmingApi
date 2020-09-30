@@ -2,9 +2,9 @@ const mongoose = require("./connect");
 //userchema nombre aleatorio
 var PEDIDOSSCHEMA ={
     nombre:                String,
-    precio:                String,
+    precio:                Number,
     descripcion:           String,
-    fechaderegistro:       String,
+    fechaderegistro:       Date,
     fotografiadelproducto: String
 
 }
